@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Popular words</title>
+</head>
+<body>
+<h1>Popular words</h1>
+<!--/*@thymesVar id="popularWords" type="java.lang.String"*/-->
+<div th:text="${popularWords}"/>
+<form method="get" action="/">
+    <p><input type="submit" value="return"/></p>
+</form>
+</body>
+</html>
