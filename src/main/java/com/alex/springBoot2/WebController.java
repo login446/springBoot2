@@ -26,7 +26,7 @@ public class WebController {
         ArrayList<Word> arrayList = ParsingString.parsing(text);
         String temp = "";
         for (Word word : arrayList)
-            temp += word.getName() + " - " + word.getCount() + "\n";
+            temp += "<p>" + word.getName() + " - " + word.getCount() + "</p>";
         model.addAttribute("popularWords", temp);
         return "words";
     }
